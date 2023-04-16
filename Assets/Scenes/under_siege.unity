@@ -398,7 +398,7 @@ GameObject:
   - component: {fileID: 348973438}
   - component: {fileID: 348973439}
   m_Layer: 0
-  m_Name: testphrase
+  m_Name: phrase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -560,7 +560,7 @@ GameObject:
   - component: {fileID: 848957175}
   - component: {fileID: 848957174}
   m_Layer: 0
-  m_Name: idle-1
+  m_Name: get_attacked_dude
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
