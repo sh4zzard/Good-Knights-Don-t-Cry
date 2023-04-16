@@ -14,17 +14,17 @@ public class PhraseScript : MonoBehaviour
     {
         float distanceToPlayer = Vector2.Distance(transform.position, player.transform.position);
 
-    if (distanceToPlayer >= distanceToShow)
-    {
-        Color newColor = objectToHideRenderer.color;
-        newColor.a = alphaWhenHidden;
-        objectToHideRenderer.color = newColor;
-    }
-    else
-    {
-        Color newColor = objectToHideRenderer.color;
-        newColor.a = 1f;
-        objectToHideRenderer.color = newColor;
-    }
+        if (distanceToPlayer >= distanceToShow)
+        {
+            Color newColor = objectToHideRenderer.color;
+            newColor.a = alphaWhenHidden;
+            objectToHideRenderer.color = newColor;
+        }
+        else
+        {
+            Color newColor = objectToHideRenderer.color;
+            newColor.a = 1f;
+            objectToHideRenderer.color = newColor;
+        }
     }
 }
