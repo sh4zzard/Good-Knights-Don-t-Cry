@@ -445,6 +445,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 30
   bossIndicator: 1
+  speed: 2.5
+  attackRange: 3
+  visionRange: 8
+  attackPoint: {fileID: 0}
+  HKLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  attackDamage: 40
+  atttackRate: 2
 --- !u!114 &1449045240
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -467,7 +476,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1449045237}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -490,13 +499,13 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.17479123, y: -0.3216403}
+  m_Offset: {x: 0.021286532, y: 0.27653942}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.35, y: 0}
     oldSize: {x: 1.28, y: 0.96}
     newSize: {x: 1.28, y: 0.96}
     adaptiveTilingThreshold: 0.5
@@ -504,7 +513,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.15869585, y: 0.31671938}
+  m_Size: {x: 0.22307947, y: 0.5777733}
   m_EdgeRadius: 0
 --- !u!212 &1449045243
 SpriteRenderer:
@@ -566,7 +575,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1449045237}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.5, y: 11.2, z: -1.53}
+  m_LocalPosition: {x: -12.18, y: 0.36, z: -1.53}
   m_LocalScale: {x: 21.920753, y: 21.920753, z: 21.920753}
   m_ConstrainProportionsScale: 0
   m_Children: []
