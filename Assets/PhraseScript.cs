@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 
 public class PhraseScript : MonoBehaviour
@@ -13,7 +14,7 @@ public class PhraseScript : MonoBehaviour
     public Sprite iconSprite;
     public Sprite phraseSprite;
 
-    private bool flagDistanceToPlayerAboveThreshold;
+    private bool isDistanceToPlayerAboveThreshold;
     private float distanceToPlayer;
 
     private SpriteRenderer _spriteRenderer;
@@ -21,11 +22,16 @@ public class PhraseScript : MonoBehaviour
 
     private void Start()
     {
+        if (iconSprite == null || phraseSprite == null)
+        {
+            Debug.LogWarning("You've not assigned sprites to [" + gameObject + "]");
+        }
+
         _spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         _spriteRenderer.sprite = iconSprite;
 
         distanceToPlayer = Vector2.Distance(transform.position, player.transform.position);
-        flagDistanceToPlayerAboveThreshold = distanceToPlayer >= distanceToShow;
+        isDistanceToPlayerAboveThreshold = distanceToPlayer >= distanceToShow;
         ChangeOpacity(alphaWhenHidden);
     }
 
@@ -34,16 +40,22 @@ public class PhraseScript : MonoBehaviour
         distanceToPlayer = Vector2.Distance(transform.position, player.transform.position);
 
         // Runs ChangeOpacity(x) if distance went above or beyond threshold
-        // uses flagDistanceToPlayerAboveThreshold to understand previous state and update only if changed
-        if (distanceToPlayer >= distanceToShow && !flagDistanceToPlayerAboveThreshold)
+        // uses isDistanceToPlayerAboveThreshold to understand previous state and update only if changed
+        if (distanceToPlayer >= distanceToShow && !isDistanceToPlayerAboveThreshold)
         {
-            flagDistanceToPlayerAboveThreshold = true;
+            isDistanceToPlayerAboveThreshold = true;
             ChangeOpacity(alphaWhenHidden);
         }
-        else if (distanceToPlayer < distanceToShow && flagDistanceToPlayerAboveThreshold)
+        else if (distanceToPlayer < distanceToShow && isDistanceToPlayerAboveThreshold)
         {
-            flagDistanceToPlayerAboveThreshold = false;
+            isDistanceToPlayerAboveThreshold = false;
             ChangeOpacity(1f);
+            _spriteRenderer.sprite = iconSprite;
+        }
+
+        if (!isDistanceToPlayerAboveThreshold && Input.GetKeyDown(KeyCode.R))
+        {
+            _spriteRenderer.sprite = phraseSprite;
         }
     }
 
