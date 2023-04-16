@@ -513,6 +513,8 @@ MonoBehaviour:
   distanceToShow: 30
   objectToHideRenderer: {fileID: 348973436}
   alphaWhenHidden: 0.06
+  iconSprite: {fileID: 21300000, guid: 1d16a939189836c46ba1a445e5ae336a, type: 3}
+  phraseSprite: {fileID: 21300000, guid: 97d68e87816a38148b951df83d4efb1f, type: 3}
 --- !u!1 &480766623
 GameObject:
   m_ObjectHideFlags: 0
