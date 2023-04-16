@@ -398,7 +398,7 @@ GameObject:
   - component: {fileID: 348973438}
   - component: {fileID: 348973439}
   m_Layer: 0
-  m_Name: testphrase
+  m_Name: phrase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -447,7 +447,7 @@ SpriteRenderer:
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 0979eac8ab3e6c949a7648f2b207d954, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 8.53, y: 2.63}
@@ -464,9 +464,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 348973435}
   m_LocalRotation: {x: -0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.2560673, y: 0.77327454, z: 0}
-  m_LocalScale: {x: -0.27191424, y: 0.31805807, z: 0.31805807}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: -0.29, y: 0.305, z: 0}
+  m_LocalScale: {x: 0.1733565, y: 0.1733565, z: 0}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 848957175}
   m_RootOrder: 0
@@ -484,18 +484,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0052661896, y: -0.011602461}
+  m_Offset: {x: 0.45, y: -1.03}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 8.53, y: 2.63}
+    pivot: {x: 1.09, y: 0}
+    oldSize: {x: 1, y: 1}
     newSize: {x: 8.53, y: 2.63}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 8.520876, y: 2.5867567}
+  m_Size: {x: 1.64, y: 2.2}
   m_EdgeRadius: 0
 --- !u!114 &348973439
 MonoBehaviour:
@@ -510,9 +510,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 841754118}
-  distanceToShow: 30
+  distanceToShow: 20
   objectToHideRenderer: {fileID: 348973436}
   alphaWhenHidden: 0
+  iconSprite: {fileID: 21300000, guid: 1d16a939189836c46ba1a445e5ae336a, type: 3}
+  phraseSprite: {fileID: 21300000, guid: 97d68e87816a38148b951df83d4efb1f, type: 3}
 --- !u!1 &480766623
 GameObject:
   m_ObjectHideFlags: 0
@@ -560,7 +562,7 @@ GameObject:
   - component: {fileID: 848957175}
   - component: {fileID: 848957174}
   m_Layer: 0
-  m_Name: idle-1
+  m_Name: get_attacked_dude
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
