@@ -10,13 +10,20 @@ public class PhraseScript : MonoBehaviour
     public float distanceToShow;
     public SpriteRenderer objectToHideRenderer;
     public float alphaWhenHidden;
+    public Sprite iconSprite;
+    public Sprite phraseSprite;
 
     private bool flagDistanceToPlayerAboveThreshold;
     private float distanceToPlayer;
 
+    private SpriteRenderer _spriteRenderer;
+
 
     private void Start()
     {
+        _spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+        _spriteRenderer.sprite = iconSprite;
+
         distanceToPlayer = Vector2.Distance(transform.position, player.transform.position);
         flagDistanceToPlayerAboveThreshold = distanceToPlayer >= distanceToShow;
         ChangeOpacity(alphaWhenHidden);
