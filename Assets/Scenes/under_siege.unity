@@ -10526,15 +10526,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 30
   bossIndicator: 1
-  speed: 2.5
   attackRange: 2
-  visionRange: 8
   attackPoint: {fileID: 1389076748}
   HKLayers:
     serializedVersion: 2
     m_Bits: 8
   attackDamage: 3
-  atttackRate: 2
   Cooldown: 2
 --- !u!114 &1801790490
 MonoBehaviour:

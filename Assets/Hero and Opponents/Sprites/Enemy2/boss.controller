@@ -15,12 +15,6 @@ MonoBehaviour:
   speed: 10
   attackRange: 15
   visionRange: 20
-  attackPoint: {fileID: 0}
-  HKLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  attackDamage: 40
-  atttackRate: 2
 --- !u!1102 &-7252830740616886956
 AnimatorState:
   serializedVersion: 6
@@ -132,12 +126,6 @@ MonoBehaviour:
   speed: 10
   attackRange: 10
   visionRange: 20
-  attackPoint: {fileID: 0}
-  HKLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  attackDamage: 40
-  atttackRate: 2
 --- !u!91 &9100000
 AnimatorController:
   m_ObjectHideFlags: 0
