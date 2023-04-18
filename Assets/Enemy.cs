@@ -15,12 +15,14 @@ public class Enemy : MonoBehaviour
 
     public Transform attackPoint;
     public LayerMask HKLayers;
+
     public int attackDamage = 40;
 
     // public float atttackRate = 2f;
     public float Cooldown = 2f;
     private float timer = 0f;
 
+    private Animator animator;
     Transform player;
     Rigidbody2D rb;
     Boss boss;
@@ -39,7 +41,7 @@ public class Enemy : MonoBehaviour
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
-        Debug.Log("dmg taken");
+        Debug.Log(rb.name + " dmg taken");
 
         if (currentHealth <= 0)
         {
