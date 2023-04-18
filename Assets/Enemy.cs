@@ -35,7 +35,10 @@ public class Enemy : MonoBehaviour
 
         player = GameObject.FindGameObjectWithTag("Player").transform;
         rb = animator.GetComponent<Rigidbody2D>();
-        boss = animator.GetComponent<Boss>();
+        if (bossIndicator)
+        {
+            boss = animator.GetComponent<Boss>();
+        }
     }
 
     public void TakeDamage(int damage)
@@ -49,7 +52,7 @@ public class Enemy : MonoBehaviour
 
             GetComponent<Collider2D>().enabled = false;
             this.enabled = false;
-            if (bossIndicator == true)
+            if (bossIndicator)
             {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
