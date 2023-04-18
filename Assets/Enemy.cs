@@ -7,7 +7,7 @@ public class Enemy : MonoBehaviour
 {
     public int maxHealth = 1;
     int currentHealth;
-    public int bossIndicator = 0;
+    public bool bossIndicator = false;
 
     public float speed = 2.5f;
 	public float attackRange = 3f;
@@ -47,7 +47,7 @@ public class Enemy : MonoBehaviour
 
             GetComponent<Collider2D>().enabled = false;
             this.enabled = false;
-            if(bossIndicator == 1)
+            if(bossIndicator == true)
             {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
