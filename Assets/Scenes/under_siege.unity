@@ -10547,6 +10547,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1863220162}
   isFlipped: 1
+  secondPhaseHPThreshold: 0.3
+  secondPhaseAttackDamage: 4
+  secondPhaseCooldown: 1.5
 --- !u!50 &1801790491
 Rigidbody2D:
   serializedVersion: 4
