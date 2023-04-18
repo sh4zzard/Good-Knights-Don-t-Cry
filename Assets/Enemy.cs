@@ -9,15 +9,15 @@ public class Enemy : MonoBehaviour
     int currentHealth;
     public bool bossIndicator = false;
 
-    public float speed = 2.5f;
+    // public float speed = 2.5f;
     public float attackRange = 3f;
-    public float visionRange = 8f;
+    // public float visionRange = 8f;
 
     public Transform attackPoint;
     public LayerMask HKLayers;
     public int attackDamage = 40;
-    public float atttackRate = 2f;
-    private Animator animator;
+
+    // public float atttackRate = 2f;
     public float Cooldown = 2f;
     private float timer = 0f;
 
