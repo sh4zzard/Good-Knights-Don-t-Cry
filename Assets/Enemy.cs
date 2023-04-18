@@ -69,26 +69,60 @@ public class Enemy : MonoBehaviour
         timer += Time.deltaTime;
 
         Vector2 target = new Vector2(player.position.x, rb.position.y);
+
+        if (bossIndicator)
+        {
+            tryBossAttack();
+        }
+    }
+
+    private void tryBossAttack()
+    {
+        Boss.stages currentStage = Boss.stages.first;
+        float currentStageCooldown = Cooldown;
+
+        if (currentHealth <= boss.secondPhaseHPThreshold * maxHealth)
+        {
+            currentStage = Boss.stages.second;
+            currentStageCooldown = boss.secondPhaseCooldown;
+        }
+
         if (Vector2.Distance(player.position, rb.position) <= attackRange)
         {
-            if (timer >= Cooldown)
+            if (timer >= currentStageCooldown)
             {
-                EnemyAttack();
+                Debug.Log("Stage: " + currentStage + " CD: " + currentStageCooldown);
+                BossAttack(currentStage);
                 timer = 0f;
             }
         }
     }
 
-    void EnemyAttack()
+    void BossAttack(Boss.stages currentStage)
     {
+        int currentAttackDamage = attackDamage;
+
+        switch (currentStage)
+        {
+            case Boss.stages.first:
+                currentAttackDamage = attackDamage;
+                break;
+            case Boss.stages.second:
+                currentAttackDamage = boss.secondPhaseAttackDamage;
+                break;
+        }
+        
+        Debug.Log("CurrentAttack: " + currentAttackDamage);
+        
         animator.SetTrigger("Attack");
 
         Collider2D[] hitHK = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, HKLayers);
 
         if (hitHK.Length > 0)
         {
+            Debug.Log("Successful hit");
             Collider2D HK = hitHK[0];
-            HK.GetComponent<HealthHK>().TakeDamage2(attackDamage);
+            HK.GetComponent<HealthHK>().TakeDamage2(currentAttackDamage);
         }
     }
 }
