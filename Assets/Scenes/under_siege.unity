@@ -333,7 +333,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 71798221}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.87996817, y: 0.36416802, z: -1.242894}
+  m_LocalPosition: {x: 1.2, y: 0.36416802, z: -1.242894}
   m_LocalScale: {x: 0.12428943, y: 0.12428943, z: 0.12428943}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10526,15 +10526,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 30
   bossIndicator: 1
-  speed: 2.5
   attackRange: 2
-  visionRange: 8
   attackPoint: {fileID: 1389076748}
   HKLayers:
     serializedVersion: 2
     m_Bits: 8
   attackDamage: 3
-  atttackRate: 2
   Cooldown: 2
 --- !u!114 &1801790490
 MonoBehaviour:
@@ -10550,6 +10547,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1863220162}
   isFlipped: 1
+  secondPhaseHPThreshold: 0.3
+  secondPhaseAttackDamage: 4
+  secondPhaseCooldown: 1.5
 --- !u!50 &1801790491
 Rigidbody2D:
   serializedVersion: 4
@@ -10707,7 +10707,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0077b16b6eb8a434da212d973ed1c0e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHp: 10
+  maxHp: 100
   trapdamage: 1
   delay: 1.5
 --- !u!1001 &2000849099
@@ -10775,11 +10775,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8413529789942519730, guid: a4b4a6d32bcb19248a754d6602ffc7e4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -32.5
+      value: 90.4
       objectReference: {fileID: 0}
     - target: {fileID: 8413529789942519730, guid: a4b4a6d32bcb19248a754d6602ffc7e4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -43.7
+      value: -44.08
       objectReference: {fileID: 0}
     - target: {fileID: 8413529789942519730, guid: a4b4a6d32bcb19248a754d6602ffc7e4, type: 3}
       propertyPath: m_LocalPosition.z
