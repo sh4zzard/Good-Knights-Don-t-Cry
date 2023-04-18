@@ -265,7 +265,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 792748792}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 398406a263381364abab4294e96316b6, type: 3}
   m_Name: 
@@ -274,6 +274,8 @@ MonoBehaviour:
   distanceToShow: 10
   objectToHideRenderer: {fileID: 1682340781}
   alphaWhenHidden: 0
+  iconSprite: {fileID: 0}
+  phraseSprite: {fileID: 0}
 --- !u!1 &1005981943
 GameObject:
   m_ObjectHideFlags: 0
@@ -445,15 +447,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 30
   bossIndicator: 1
-  speed: 2.5
   attackRange: 3
-  visionRange: 8
   attackPoint: {fileID: 0}
   HKLayers:
     serializedVersion: 2
     m_Bits: 0
   attackDamage: 40
-  atttackRate: 2
+  Cooldown: 2
 --- !u!114 &1449045240
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -468,6 +468,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1788717688}
   isFlipped: 1
+  secondPhaseHPThreshold: 0
+  secondPhaseAttackDamage: 0
+  secondPhaseCooldown: 0
 --- !u!50 &1449045241
 Rigidbody2D:
   serializedVersion: 4
