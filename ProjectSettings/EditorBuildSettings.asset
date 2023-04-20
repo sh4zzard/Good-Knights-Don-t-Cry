@@ -36,6 +36,6 @@ EditorBuildSettings:
     path: Assets/Scenes/System/SYS_Settings_Menu.unity
     guid: 7efafb890c8ea6f44a9693d6f4283e43
   - enabled: 0
-    path: Assets/_1/Scenes/SampleScene.unity
+    path: Assets/_non_dependancies/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects: {}
