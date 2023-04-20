@@ -107,9 +107,9 @@ ScriptedImporter:
     spriteBone:
     - name: bNHandPalm
       guid: 05ebda6e64924f84fbfa2b055ec3025e
-      position: {x: 64.7063, y: 17.430298, z: 8}
+      position: {x: 64.7063, y: 17.430542, z: 8}
       rotation: {x: 0, y: 0, z: 0.77334195, w: 0.6339891}
-      length: 82.27509
+      length: 82.27511
       parentId: -1
       color:
         serializedVersion: 2
@@ -445,9 +445,9 @@ ScriptedImporter:
     spriteBone:
     - name: bFHandPalm
       guid: b11e300630448ab48a0582d0ea05ae1d
-      position: {x: 64.4353, y: 18.669312, z: 4}
-      rotation: {x: 0, y: 0, z: 0.75619286, w: 0.65434885}
-      length: 67.3924
+      position: {x: 64.435425, y: 18.669312, z: 8}
+      rotation: {x: 0, y: 0, z: 0.7561928, w: 0.65434885}
+      length: 67.392395
       parentId: -1
       color:
         serializedVersion: 2
@@ -783,9 +783,9 @@ ScriptedImporter:
     spriteBone:
     - name: bHammer
       guid: 00802816c7668104284028e7aad9480a
-      position: {x: 1013.76196, y: 245.43823, z: 3}
-      rotation: {x: 0, y: 0, z: 0.9980547, w: -0.06234561}
-      length: 959.4505
+      position: {x: 1013.7621, y: 245.43823, z: 3}
+      rotation: {x: 0, y: 0, z: 0.9980546, w: -0.062345557}
+      length: 959.45074
       parentId: -1
       color:
         serializedVersion: 2
@@ -1580,9 +1580,9 @@ ScriptedImporter:
     spriteBone:
     - name: bNHand2
       guid: 3968f50bf2b1dac49aca8680434d8a64
-      position: {x: 22.813843, y: 30.597778, z: 7}
-      rotation: {x: 0, y: 0, z: 0.67268544, w: 0.7399286}
-      length: 283.1126
+      position: {x: 22.813843, y: 30.5979, z: 7}
+      rotation: {x: 0, y: 0, z: 0.67268556, w: 0.73992854}
+      length: 283.1127
       parentId: -1
       color:
         serializedVersion: 2
@@ -1908,8 +1908,8 @@ ScriptedImporter:
     - name: bNHand1
       guid: d21bbcc175b5d21418e4846e15000ab8
       position: {x: 30.590881, y: 294.14355, z: 6}
-      rotation: {x: 0, y: 0, z: -0.60370255, w: 0.7972097}
-      length: 273.79816
+      rotation: {x: 0, y: 0, z: -0.60370266, w: 0.7972096}
+      length: 273.79813
       parentId: -1
       color:
         serializedVersion: 2
@@ -2234,9 +2234,9 @@ ScriptedImporter:
     spriteBone:
     - name: bFHand2
       guid: b1d67307a00c4934397aa71c053b455c
-      position: {x: 11.232178, y: 21.836792, z: 3}
-      rotation: {x: 0, y: 0, z: 0.50406426, w: 0.8636662}
-      length: 323.68985
+      position: {x: 11.2323, y: 21.836792, z: 7}
+      rotation: {x: 0, y: 0, z: 0.50406444, w: 0.8636661}
+      length: 323.68994
       parentId: -1
       color:
         serializedVersion: 2
@@ -2996,9 +2996,9 @@ ScriptedImporter:
     spriteBone:
     - name: bFHand1
       guid: 0971eb6556fd3e5408c455ee966b3a65
-      position: {x: 35.419495, y: 249.20325, z: 2}
-      rotation: {x: 0, y: 0, z: -0.54529697, w: 0.838243}
-      length: 238.86523
+      position: {x: 35.419495, y: 249.20325, z: 6}
+      rotation: {x: 0, y: 0, z: -0.5452969, w: 0.838243}
+      length: 238.86522
       parentId: -1
       color:
         serializedVersion: 2
@@ -5781,8 +5781,8 @@ ScriptedImporter:
         rgba: 4286643968
     - name: bFHand1
       guid: 0971eb6556fd3e5408c455ee966b3a65
-      position: {x: 29.871117, y: -158.30011, z: 2}
-      rotation: {x: 0, y: -0, z: -0.9720389, w: 0.23481995}
+      position: {x: 29.871117, y: -158.30011, z: 6}
+      rotation: {x: 0, y: -0, z: -0.9720389, w: 0.23481996}
       length: 238.86522
       parentId: 16
       color:
@@ -5790,17 +5790,17 @@ ScriptedImporter:
         rgba: 4294934528
     - name: bFHand2
       guid: b1d67307a00c4934397aa71c053b455c
-      position: {x: 238.86519, y: 0.000029780644, z: 3}
-      rotation: {x: 0, y: -0, z: 0.89348286, w: 0.4490974}
-      length: 323.68976
+      position: {x: 238.86523, y: 0.000062707346, z: 7}
+      rotation: {x: 0, y: -0, z: 0.8934829, w: 0.44909728}
+      length: 323.68988
       parentId: 9
       color:
         serializedVersion: 2
         rgba: 4294901888
     - name: bFHandPalm
       guid: b11e300630448ab48a0582d0ea05ae1d
-      position: {x: 323.68988, y: -0.000016394348, z: 4}
-      rotation: {x: 0, y: 0, z: 0.32326436, w: 0.94630873}
+      position: {x: 323.68988, y: -0.000064481195, z: 8}
+      rotation: {x: 0, y: 0, z: 0.32326418, w: 0.9463088}
       length: 67.39238
       parentId: 10
       color:
@@ -5809,25 +5809,25 @@ ScriptedImporter:
     - name: bNHand1
       guid: d21bbcc175b5d21418e4846e15000ab8
       position: {x: -5.1790476, y: 193.10611, z: 6}
-      rotation: {x: 0, y: -0, z: -0.98631316, w: 0.16488287}
-      length: 273.79816
+      rotation: {x: 0, y: -0, z: -0.9863132, w: 0.16488273}
+      length: 273.79813
       parentId: 16
       color:
         serializedVersion: 2
         rgba: 4278255615
     - name: bNHand2
       guid: 3968f50bf2b1dac49aca8680434d8a64
-      position: {x: 273.79816, y: -0.00000023009852, z: 7}
-      rotation: {x: 0, y: -0, z: 0.9829681, w: 0.18377629}
-      length: 283.11264
+      position: {x: 273.798, y: 0.0001239519, z: 7}
+      rotation: {x: 0, y: -0, z: 0.98296815, w: 0.18377607}
+      length: 283.1127
       parentId: 12
       color:
         serializedVersion: 2
         rgba: 4278255360
     - name: bNHandPalm
       guid: 05ebda6e64924f84fbfa2b055ec3025e
-      position: {x: 283.11264, y: 0.00004227875, z: 8}
-      rotation: {x: 0, y: 0, z: 0.14574262, w: 0.9893226}
+      position: {x: 283.11267, y: -0.00007865905, z: 8}
+      rotation: {x: 0, y: 0, z: 0.14574254, w: 0.9893226}
       length: 82.275085
       parentId: 13
       color:
