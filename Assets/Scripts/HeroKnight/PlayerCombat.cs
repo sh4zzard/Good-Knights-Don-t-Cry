@@ -43,7 +43,7 @@ public class PlayerCombat : MonoBehaviour
             }
             else if (enemy.CompareTag("Archer"))
             {
-                enemy.GetComponent<ArcherScript>().TakeDamage(attackDamage);
+                enemy.GetComponent<Archer>().TakeDamage(attackDamage);
             }
         }
     }

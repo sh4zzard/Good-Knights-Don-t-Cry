@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ArcherScript : MonoBehaviour
+public class Archer : MonoBehaviour
 {
     public float moveSpeed = 3f;
     public float attackRange = 10f;

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class options : MonoBehaviour
+public class OptionsMenu : MonoBehaviour
 {
     public void BacktoMM ()
     {
