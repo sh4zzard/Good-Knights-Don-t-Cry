@@ -39,7 +39,7 @@ public class Enemy : MonoBehaviour
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
-        Debug.Log("dmg taken");
+        Debug.Log("Enemy got dmg");
 
         if(currentHealth <= 0)
         {
@@ -51,7 +51,7 @@ public class Enemy : MonoBehaviour
             {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
-             else
+            else
             {
                 Destroy(gameObject);
             }
