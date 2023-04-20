@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/System/SYS_Main_Menu.unity
     guid: 73a51256aec701b4da595af3cf13f8f5
   - enabled: 1
-    path: Assets/_1/Scenes/Cutscene1/Cutscene 1.unity
+    path: Assets/Scenes/Cutscenes/CS_Cutscene_1.unity
     guid: 8ede53aec63580e498bbef67e3c30123
   - enabled: 1
     path: Assets/Scenes/Main Levels/ML_Under_Siege.unity
@@ -33,7 +33,7 @@ EditorBuildSettings:
     path: Assets/Scenes/System/SYS_Death_Scene.unity
     guid: 7f037cf45e2e76d4d98f7dc9707b1a68
   - enabled: 1
-    path: Assets/_1/Settings Menu/Settings Menu.unity
+    path: Assets/Scenes/System/SYS_Settings_Menu.unity
     guid: 7efafb890c8ea6f44a9693d6f4283e43
   - enabled: 0
     path: Assets/_1/Scenes/SampleScene.unity
