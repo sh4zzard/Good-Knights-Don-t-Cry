@@ -12,6 +12,7 @@ public class PlayerCombat : MonoBehaviour
     public int attackDamage = 40;
     public float atttackRate = 2f;
     float nextAttackTime = 0f;
+    public AudioSource AttackSound;
     
 
     void Update()
@@ -30,12 +31,20 @@ public class PlayerCombat : MonoBehaviour
     void Attack()
     {
         animator.SetTrigger("Attack1");
+        AttackSound.Play();
 
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
         
         foreach(Collider2D enemy in hitEnemies)
-        {   
-            enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
+        {
+            if (enemy.CompareTag("Enemy"))
+            {
+                enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
+            }
+            else if (enemy.CompareTag("Archer"))
+            {
+                enemy.GetComponent<ArcherScript>().TakeDamage(attackDamage);
+            }
         }
     }
     void OnDrawnGizmosSelected()
