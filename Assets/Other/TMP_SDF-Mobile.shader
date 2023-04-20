@@ -89,9 +89,9 @@ SubShader {
 		#pragma multi_compile __ UNITY_UI_CLIP_RECT
 		#pragma multi_compile __ UNITY_UI_ALPHACLIP
 
+		#include "TMPro_Properties.cginc"
 		#include "UnityCG.cginc"
 		#include "UnityUI.cginc"
-		#include "TMPro_Properties.cginc"
 
 		struct vertex_t {
 			UNITY_VERTEX_INPUT_INSTANCE_ID
