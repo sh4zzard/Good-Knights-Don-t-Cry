@@ -13,6 +13,7 @@ public class VideoContainerScript : MonoBehaviour
     private RawImage ri;
 
     private float length = 6.5f;
+    // private float length = 0;
     private float timer;
 
     // Start is called before the first frame update
