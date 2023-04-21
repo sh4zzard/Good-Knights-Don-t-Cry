@@ -7,15 +7,17 @@ TagManager:
   - Ladder
   - Enemy
   - Interact
+  - Trap
+  - Archer
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
   - Enemy
-  - 
+  - Sensor
   - 
   - 
   - 
