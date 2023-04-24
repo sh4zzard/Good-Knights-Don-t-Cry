@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Interact
   - Trap
+  - Archer
   layers:
   - Default
   - TransparentFX
