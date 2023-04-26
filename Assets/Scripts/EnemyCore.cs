@@ -20,6 +20,11 @@ public class EnemyCore : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        _animator = GetComponent<Animator>();
+        CurrentHealth = MaxHealth;
+
+        player = GameObject.FindGameObjectWithTag("Player").transform;
+        _rb = gameObject.GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
