@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(BoxCollider2D))]
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(Animator))]
 public class EnemyCore : MonoBehaviour
@@ -16,15 +17,18 @@ public class EnemyCore : MonoBehaviour
     [SerializeField] private Transform player;
     private Animator _animator;
     private Rigidbody2D _rb;
+    private BoxCollider2D _bc;
 
     // Start is called before the first frame update
     void Start()
     {
         _animator = GetComponent<Animator>();
-        CurrentHealth = MaxHealth;
+        _rb = gameObject.GetComponent<Rigidbody2D>();
+        _bc = GetComponent<BoxCollider2D>();
 
         player = GameObject.FindGameObjectWithTag("Player").transform;
-        _rb = gameObject.GetComponent<Rigidbody2D>();
+        
+        CurrentHealth = MaxHealth;
     }
 
     // Update is called once per frame
