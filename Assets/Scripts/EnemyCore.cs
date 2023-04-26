@@ -40,7 +40,7 @@ public class EnemyCore : MonoBehaviour
         get => _currentHealth;
         set
         {
-            if (value <= 0)
+            if (value > _currentHealth)
             {
                 _currentHealth = 0;
                 // Die();
