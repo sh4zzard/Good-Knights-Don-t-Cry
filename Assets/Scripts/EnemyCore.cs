@@ -10,7 +10,6 @@ public class EnemyCore : MonoBehaviour
     private int _currentHealth;
 
     [SerializeField] private int attackDamage = 2;
-
     [SerializeField] private float attackCooldown = 2f;
     private float _timer = 0f;
 
@@ -27,4 +26,24 @@ public class EnemyCore : MonoBehaviour
     void Update()
     {
     }
+
+    // Properties zone
+    private int MaxHealth => maxHealth;
+
+    private int CurrentHealth
+    {
+        get => _currentHealth;
+        set
+        {
+            if (value <= 0)
+            {
+                _currentHealth = 0;
+                // Die();
+            }
+        }
+    }
+
+    private int AttackDamage => attackDamage;
+
+    private float AttackCooldown => attackCooldown;
 }
