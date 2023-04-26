@@ -14,10 +14,10 @@ public class EnemyCore : MonoBehaviour
     [SerializeField] private float attackCooldown = 2f;
     private float _timer = 0f;
 
-    [SerializeField] private Transform player;
     private Animator _animator;
     private Rigidbody2D _rb;
     private BoxCollider2D _bc;
+    private Transform _player;
 
     // Start is called before the first frame update
     void Start()
@@ -25,9 +25,8 @@ public class EnemyCore : MonoBehaviour
         _animator = GetComponent<Animator>();
         _rb = gameObject.GetComponent<Rigidbody2D>();
         _bc = GetComponent<BoxCollider2D>();
+        _player = GameObject.FindGameObjectWithTag("Player").transform;
 
-        player = GameObject.FindGameObjectWithTag("Player").transform;
-        
         CurrentHealth = MaxHealth;
     }
 
