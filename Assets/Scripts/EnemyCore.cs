@@ -63,11 +63,15 @@ public class EnemyCore : MonoBehaviour
         get => _currentHealth;
         set
         {
-            if (value > _currentHealth)
+            if (value <= _currentHealth)
             {
                 Debug.Log(gameObject + " died");
                 _currentHealth = 0;
                 Die();
+            }
+            else
+            {
+                _currentHealth = value;
             }
         }
     }
