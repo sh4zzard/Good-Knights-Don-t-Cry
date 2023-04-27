@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(BoxCollider2D))]
 [RequireComponent(typeof(Rigidbody2D))]
@@ -11,7 +12,10 @@ public class EnemyCore : MonoBehaviour
     private int _currentHealth;
 
     [SerializeField] private int attackDamage = 2;
+
     [SerializeField] private float attackCooldown = 2f;
+
+    //TODO remove
     private float _timer = 0f;
 
     private Animator _animator;
@@ -19,20 +23,36 @@ public class EnemyCore : MonoBehaviour
     private BoxCollider2D _bc;
     private Transform _player;
 
+    [SerializeField] private DebugPanel dp;
+
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         _animator = GetComponent<Animator>();
         _rb = gameObject.GetComponent<Rigidbody2D>();
         _bc = GetComponent<BoxCollider2D>();
         _player = GameObject.FindGameObjectWithTag("Player").transform;
+        dp = GetComponent<DebugPanel>();
 
         CurrentHealth = MaxHealth;
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
+    }
+
+    public void TakeDamage(int damage)
+    {
+        Debug.Log("[" + gameObject + "] dmg taken");
+        _currentHealth -= damage;
+    }
+
+    private void Die()
+    {
+        GetComponent<Collider2D>().enabled = false;
+        this.enabled = false;
+        Destroy(gameObject);
     }
 
     // Properties zone
@@ -45,8 +65,9 @@ public class EnemyCore : MonoBehaviour
         {
             if (value > _currentHealth)
             {
+                Debug.Log(gameObject + " died");
                 _currentHealth = 0;
-                // Die();
+                Die();
             }
         }
     }
